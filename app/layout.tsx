@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import React from "react";
+import React, { ReactNode } from "react";
 
 import Navbar from "@/components/Navbar";
 
@@ -25,11 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout = async ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
       <body
@@ -40,4 +36,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

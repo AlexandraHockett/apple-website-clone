@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import React from "react";
 
+import Navbar from "@/components/Navbar";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -18,6 +20,9 @@ export const metadata: Metadata = {
   title: "Apple Website - CLONE",
   description:
     "A visually stunning and interactive clone of the Apple website, built using Next.js, GSAP, and Three.js for advanced animations and 3D graphics.",
+  icons: {
+    icon: "/images/apple.svg",
+  },
 };
 
 export default function RootLayout({
@@ -30,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

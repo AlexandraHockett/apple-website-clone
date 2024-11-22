@@ -4,9 +4,9 @@
 export const heroVideo = "/videos/hero.mp4";
 export const smallHeroVideo = "/videos/smallHero.mp4";
 export const highlightFirstVideo = "/videos/highlight-first.mp4";
-export const highlightSecondVideo = "/videos/highlight-second.mp4";
-export const highlightThirdVideo = "/videos/highlight-third.mp4";
-export const highlightFourthVideo = "/videos/highlight-fourth.mp4";
+export const highlightSecondVideo = "/videos/hightlight-third.mp4";
+export const highlightThirdVideo = "/videos/hightlight-sec.mp4";
+export const highlightFourthVideo = "/videos/hightlight-fourth.mp4";
 export const exploreVideo = "/videos/explore.mp4";
 export const frameVideo = "/videos/frame.mp4";
 
